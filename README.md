@@ -1,7 +1,7 @@
 ## 🚀 API-NodeJS-RepositoryPattern-Supabase
 Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banco de dados Supabase.
 
-### O que voçê vai ver nesse Projeto
+#### O que voçê vai ver nesse Projeto
 | Tecnologia | Descrição |
 |-----------|-----------|
 | **Supabase** | Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL  |
@@ -11,7 +11,7 @@ Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banc
 | **Express Router** | Reponsável por criar manipuladores de rotas modulares e montáveis.|
 | **Sequelize** | Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL.|
 
-### Requisitos e Detalhe do uso do Node.js
+#### Requisitos e Detalhe do uso do Node.js
 Instalar o Framework de desenvolvimento. 
 ```bash
 npm install express
@@ -22,14 +22,14 @@ Automatizar o processo de reinicialização
 npm install -g nodemon
 ```
 
-### Para iniciar o servidor colocar o comando:
+#### Para iniciar o servidor colocar o comando:
 ```bash
 nodemon index.js
 ou 
 node index.js
 ```
 
-### 🧪 Execução de Endpoints
+#### 🧪 Execução de Endpoints
 **1 -Registrar paciente**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
    ```json
@@ -77,7 +77,7 @@ node index.js
     }
 ```
 
-### Rotas dos métodos
+#### Rotas dos métodos
 | Metodo | Descrição |
 |-----------|-----------|
 | Metodo: POST |  /paciente |
@@ -92,7 +92,7 @@ node index.js
 | Metodo: GET |  /sessao |
 
 
-### 🔐 String de conexão do banco
+#### 🔐 String de conexão do banco
 Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
 
 ```bash
