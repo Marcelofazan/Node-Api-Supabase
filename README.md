@@ -12,17 +12,17 @@ Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banc
 | **Sequelize** | Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL.|
 
 #### Requisitos e Detalhe do uso do Node.js
-Instalar o Framework de desenvolvimento. 
+- Recuperar as dependencias do projeto node_modules . 
 ```bash
 npm install express
 ```
 
-Automatizar o processo de reinicialização
+- Automatizar o processo de inicialização
 ```bash
 npm install -g nodemon
 ```
 
-#### Para iniciar o servidor colocar o comando:
+- Executar o Build do Projeto
 ```bash
 nodemon index.js
 ou 
