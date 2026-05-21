@@ -31,7 +31,7 @@ node index.js
 
 #### 🧪 Execução de Endpoints
 **1 -Registrar paciente**
-- Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
+- Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json
    ```json
     { 
             "nome": "Pessoa 1", 
@@ -42,7 +42,7 @@ node index.js
    ```
 
 **2 -Alterar paciente**
-- Enviar PUT / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
+- Enviar PUT / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json 
   ```json
     { 
             "pacienteId": 1, 
@@ -54,7 +54,7 @@ node index.js
   ```
 
 **3 -Registrar sessão**
-- Enviar POST / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
+- Enviar POST / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json 
    ```json
     { 
             "pacienteId": 1,
@@ -66,7 +66,7 @@ node index.js
   ```
 
 **4 -Alterar sessão**
-- Enviar PUT / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte JSON 
+- Enviar PUT / Sessao: **http://localhost:3333/sessao**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json
 ```json
     { 
             "sessaoId": 1,
