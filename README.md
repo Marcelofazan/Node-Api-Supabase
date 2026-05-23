@@ -1,4 +1,4 @@
-## 🚀 WebAPI-NodeJS-RepositoryPattern-Supabase
+## 🚀 Api-Node-Supabase
 Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banco de dados Supabase.
 
 #### O que voçê vai ver nesse Projeto
@@ -11,7 +11,7 @@ Exemplo de criação de API em Node.js na arquitetura de camadas utilizando banc
 | **Express Router** | Reponsável por criar manipuladores de rotas modulares e montáveis.|
 | **Sequelize** | Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL.|
 
-#### Requisitos e Detalhe do uso do Node.js
+#### Requisitos do Projeto
 - Recuperar as dependencias do projeto node_modules . 
 ```bash
 npm install express
@@ -29,7 +29,7 @@ ou
 node index.js
 ```
 
-#### 🧪 Execução de Endpoints
+#### 🧪 Executar Endpoints
 **1 -Registrar paciente**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json
    ```json
@@ -77,7 +77,6 @@ node index.js
     }
 ```
 
-#### Rotas dos métodos
 | Metodo | Descrição |
 |-----------|-----------|
 | Metodo: POST |  /paciente |
