@@ -22,6 +22,7 @@ npm install express
 npm install -g nodemon
 ```
 
+#### 🔄 Executar a aplicação
 - Executar o Build do Projeto
 ```bash
 nodemon index.js
