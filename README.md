@@ -22,6 +22,19 @@ npm install express
 npm install -g nodemon
 ```
 
+#### ⚠️ String de conexão do banco
+Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
+
+```bash
+const sequelize = new Sequelize('SEUBANCO', 'postgres', 'SUASENHA', {
+host: 'localhost',
+dialect: 'postgres',
+define: {
+	timestamps: false,
+	},
+```
+O script para criação da tabela do exemplo encontra-se na pasta **Database**.
+
 #### 🔄 Executar a aplicação
 - Executar o Build do Projeto
 ```bash
@@ -90,18 +103,3 @@ node index.js
 | Metodo: DELETE |  /sessao/1 |
 | Metodo: GET |  /sessao/1 |
 | Metodo: GET |  /sessao |
-
-
-#### ⚠️ String de conexão do banco
-Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
-
-```bash
-const sequelize = new Sequelize('SEUBANCO', 'postgres', 'SUASENHA', {
-host: 'localhost',
-dialect: 'postgres',
-define: {
-	timestamps: false,
-	},
-```
-
-O script para criação da tabela do exemplo encontra-se na pasta **Database**.
