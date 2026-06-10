@@ -44,6 +44,20 @@ node index.js
 ```
 
 #### 🧪 Executar Endpoints
+
+| Metodo | Descrição |
+|-----------|-----------|
+| Metodo: POST |  /paciente |
+| Metodo: PUT | /paciente |
+| Metodo: DELETE |  /paciente/1 |
+| Metodo: GET |  /paciente |
+| Metodo: GET |  /paciente/likeNome?nome="Pessoa 1" |
+| Metodo: POST |  /sessao |
+| Metodo: PUT |  /sessao |
+| Metodo: DELETE |  /sessao/1 |
+| Metodo: GET |  /sessao/1 |
+| Metodo: GET |  /sessao |
+
 **1 -Registrar paciente**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json
    ```json
@@ -90,16 +104,3 @@ node index.js
             "inPago": false
     }
 ```
-
-| Metodo | Descrição |
-|-----------|-----------|
-| Metodo: POST |  /paciente |
-| Metodo: PUT | /paciente |
-| Metodo: DELETE |  /paciente/1 |
-| Metodo: GET |  /paciente |
-| Metodo: GET |  /paciente/likeNome?nome="Pessoa 1" |
-| Metodo: POST |  /sessao |
-| Metodo: PUT |  /sessao |
-| Metodo: DELETE |  /sessao/1 |
-| Metodo: GET |  /sessao/1 |
-| Metodo: GET |  /sessao |
