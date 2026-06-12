@@ -1,7 +1,7 @@
 ## 🚀 Api-Node-Supabase
 Exemplo de criação de API em Node.js com arquitetura de camadas utilizando banco de dados Supabase.
 
-#### O que voçê vai ver nesse Projeto
+#### 📋 O que voçê vai ver nesse Projeto
 | Tecnologia | Descrição |
 |-----------|-----------|
 | **.env** | Gerenciar variáveis de ambiente, garantindo segurança (não expor senhas/chaves) e flexibilidade entre ambientes (desenvolvimento, produção) |
