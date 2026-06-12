@@ -26,12 +26,15 @@ npm install -g nodemon
 Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
 
 ```bash
-const sequelize = new Sequelize('SEUBANCO', 'postgres', 'SUASENHA', {
-host: 'localhost',
-dialect: 'postgres',
-define: {
-	timestamps: false,
-	},
+const sequelize = new Sequelize('postgresql://postgres:[SUA_SENHA]@db.[PROJECT_URL].supabase.co:5432/postgres', {
+  dialect: 'postgres',
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false // Often required for cloud environments like Supabase
+    }
+  }
+});
 ```
 O script para criação da tabela do exemplo encontra-se na pasta **Database**.
 
