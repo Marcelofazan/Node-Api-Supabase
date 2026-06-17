@@ -108,8 +108,8 @@ node index.js
     }
 ```
 
-#### ⚙️ Supabase deixar tabelas Enable Row Level Security (RLS) desmarcado
+#### ⚙️ Supabase tabelas Enable Row Level Security (RLS) desmarcado
 - As tabelas tem que estar marcado como **UNREGISTRICTED**
-- Alterar em Configuration, políticas, alterar Manage Row Level Security policies for your tables, para RLS Disabled.
+- Alterar em Configuração -> Políticas, alterar Manage Row Level Security policies for your tables para RLS Disabled.
 
 
