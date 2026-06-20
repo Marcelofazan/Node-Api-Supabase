@@ -11,16 +11,6 @@ Exemplo de API em Node.js na plataforma Supabase.
 | **Sequelize** | Mapeador objeto-relacional (ORM) permite que manipular dados usando objetos e métodos JavaScript, eliminando a necessidade de escrever queries SQL.|
 | **Supabase** | Wrapper (capa facilitadora) para simplificar o desenvolvimento com o banco de dados PostgreSQL  |
 
-#### Requisitos do Projeto
-- Recuperar as dependencias do projeto node_modules . 
-```bash
-npm install express
-```
-
-- Automatizar o processo de inicialização
-```bash
-npm install -g nodemon
-```
 
 #### ⚠️ String de conexão do banco
 Modifique a string de conexão no arquivo **db.js**, no trecho indicado:
@@ -39,6 +29,15 @@ const sequelize = new Sequelize('postgresql://postgres:[SUA_SENHA]@db.[PROJECT_U
 O script para criação da tabela do exemplo encontra-se na pasta **Database**.
 
 #### 🔄 Executar a aplicação
+
+- Recuperar as dependencias do projeto node_modules . 
+```bash
+npm install express
+```
+- Automatizar o processo de inicialização
+```bash
+npm install -g nodemon
+```
 - Executar o Build do Projeto
 ```bash
 nodemon index.js
@@ -47,19 +46,6 @@ node index.js
 ```
 
 #### 🧪 Executar Endpoints
-
-| Metodo | Descrição |
-|-----------|-----------|
-| Metodo: POST |  /paciente |
-| Metodo: PUT | /paciente |
-| Metodo: DELETE |  /paciente/1 |
-| Metodo: GET |  /paciente |
-| Metodo: GET |  /paciente/likeNome?nome="Pessoa 1" |
-| Metodo: POST |  /sessao |
-| Metodo: PUT |  /sessao |
-| Metodo: DELETE |  /sessao/1 |
-| Metodo: GET |  /sessao/1 |
-| Metodo: GET |  /sessao |
 
 **1 -Registrar paciente**
 - Enviar POST / Paciente: **http://localhost:3333/paciente**, selecionar Guia Body -> escolher RAW e enviar o seguinte Content-Type: application/json
@@ -107,6 +93,20 @@ node index.js
             "inPago": false
     }
 ```
+
+| Metodo | Descrição |
+|-----------|-----------|
+| Metodo: POST |  /paciente |
+| Metodo: PUT | /paciente |
+| Metodo: DELETE |  /paciente/1 |
+| Metodo: GET |  /paciente |
+| Metodo: GET |  /paciente/likeNome?nome="Pessoa 1" |
+| Metodo: POST |  /sessao |
+| Metodo: PUT |  /sessao |
+| Metodo: DELETE |  /sessao/1 |
+| Metodo: GET |  /sessao/1 |
+| Metodo: GET |  /sessao |
+
 
 #### ⚙️ Supabase tabelas Enable Row Level Security (RLS) desmarcado
 - As tabelas tem que estar marcado como **UNREGISTRICTED**
