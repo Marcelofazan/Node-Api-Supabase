@@ -1,4 +1,4 @@
-## 🚀 Node-Api-Supabase
+## 🚀 Api-Node-Supabase
 Exemplo de API em Node.js na plataforma Supabase.
 
 #### 📋 O que você vai encontrar neste projeto
